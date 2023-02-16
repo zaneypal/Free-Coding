@@ -13,6 +13,16 @@ import sys
 def tab(amount):
     return "\t"*amount
 
+#def akchk(mode, table_ak, response):
+    '''Stands for Accepted Keywords Check'''
+    for word in table_ak:
+        if word == response.lower():
+            if mode != None:
+                mode = True
+                break
+            else:
+                mode = False
+
 def hearts_count(amount):
     lost = 3 - amount
     if hearts_on == True:
@@ -22,8 +32,9 @@ def next():
     print("Press enter to continue. Press 'b' to go back.")
     input("Next ►  ") # Not done
 
-def mode_select(mode):
-    print() # Not done
+#def mode_select(mode):
+     
+    # Not done
 
 # ak means Accepted Keywords
 view_tables_ak = ["view tables", "view table", "vt", "v", "vi", "view", "tables", "table"]
