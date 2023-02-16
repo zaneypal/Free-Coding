@@ -112,14 +112,14 @@ while start_mode == True:
         while quiz_mode1 == True: 
             multiplier = input("\n\nWhat number do you want to multiply by?  ")
             if multiplier.lower() == 'q':
-                continue
+                break
             while multiplier.isnumeric() == False:
                 print("Please enter a number.")
                 multiplier = input("\n\nWhat number do you want to multiply by?  ")
             multiplier = int(multiplier)
             multiplicand = input("\nWhat is the max number you want to multiply by?  ")
             if multiplicand.lower() == 'q':
-                continue
+                break
             while multiplicand.isnumeric() == False:
                 print("Please enter a number.")
                 multiplicand = input("\nWhat is the max number you want to multiply by?  ")
