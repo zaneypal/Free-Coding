@@ -67,9 +67,11 @@ while start_mode == True:
             multiplicand = input("\nHow many rows do you want to see?  ")
         multiplicand = int(multiplicand)
         print("")
+        print(("="*42) + f"\n{multiplier} Times Table\n" + ("="*42))
         for i in range(1, multiplicand+1):
             product = multiplier * i
-            print(f"{multiplier} x {i} = {product}")
+            print(f"{multiplier} x {i}\t\t= \t{product}")
+            print("-"*42)
         status = input("\nHit enter to create a new table. Press 'q' to exit view tables mode.  ")
         if status.lower() == "q":
             break
